@@ -1,0 +1,6 @@
+0 rotten bananas
+1 rotten apples
+2 rotten oranges
+3 fresh bananas
+4 fresh apples
+5 fresh oranges
