@@ -1,5 +1,4 @@
 # fruit-classifier-app
-# Image Classification Project
 
 This project uses a trained model to classify images into different categories.
 
