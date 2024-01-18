@@ -8,14 +8,14 @@ from tensorflow.keras.models import load_model
 from scipy.ndimage import zoom
 
 # Load the model
-model = load_model(r"C:\Users\jacok\OneDrive\Desktop\net\netscript\source\keras_model.h5", compile=False)
+model = load_model("path\to\keras_model.h5", compile=False)
 
 # Load the labels
-class_names = open(r"C:\Users\jacok\OneDrive\Desktop\net\netscript\source\labels.txt", "r").readlines()
+class_names = open("path\to\labels.txt", "r").readlines()
 
 # Streamlit app
 st.title("Fruit Classifier App")
-st.header("Michael Muthomi")
+st.header("")
 st.header("Labels: 0 - rotten bananas. 1- rotten apples. 2- rotten oranges. 3- fresh bananas. 4- fresh apples. 5- fresh oranges")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
