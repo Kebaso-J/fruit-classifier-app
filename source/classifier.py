@@ -6,7 +6,7 @@ import numpy as np
 np.set_printoptions(suppress=True)
 
 # Load the model
-model = load_model(r"C:\Users\jacok\OneDrive\Desktop\net\netscript\source\keras_model.h5", compile=False)
+model = load_model("\path\to\keras_model.h5", compile=False)
 
 # Load the labels
 class_names = open(r"C:\Users\jacok\OneDrive\Desktop\net\netscript\source\labels.txt", "r").readlines()
@@ -17,7 +17,7 @@ class_names = open(r"C:\Users\jacok\OneDrive\Desktop\net\netscript\source\labels
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 
 # Replace this with the path to your image
-image = Image.open(r"C:\Users\jacok\Downloads\archive (4)\dataset\dataset\train\rottenbanana\vertical_flip_Screen Shot 2018-06-12 at 9.22.37 PM.png").convert("RGB")
+image = Image.open("\path\to\image").convert("RGB")
 
 # resizing the image to be at least 224x224 and then cropping from the center
 size = (224, 224)
